@@ -1,5 +1,6 @@
-﻿#include<stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
+
 int singleNumber(int* nums, int numsSize)
 {
     while (--numsSize)
