@@ -3,7 +3,7 @@
 
 int main()
 {
-	printf("We cherish each moment of our lives.\n珍惜生命中的每一刻。\n");
+	printf("It was up to me to reach for that dream.\n我凭借着自己的努力去追逐梦想。\n");
 	printf("\n");
 	system("pause");
 	return 0;
