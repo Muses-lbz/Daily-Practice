@@ -1,4 +1,4 @@
-﻿//#include <stdio.h>
+//#include <stdio.h>
 //#include <stdlib.h>
 //
 //int main()
@@ -38,3 +38,14 @@
 //	return 0;
 //}
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+	char str[] = "You need to make yourself indispensable.你需要让自己成为不可替代的人。";
+	printf("%d\n", sizeof(str));
+	system("pause");
+	return 0;
+}
