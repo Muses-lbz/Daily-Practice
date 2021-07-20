@@ -1,4 +1,4 @@
-﻿#include<stdio.h>
+#include <stdio.h>
 int main()
 {
 	int a[] = { 4,0,2,3,1 }, i, j, t;
