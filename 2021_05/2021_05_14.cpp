@@ -88,7 +88,8 @@
 //}
 
 #define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
+#include <stdio.h>
+
 int main(){
     int t1,t2,h1,h2,m1,m2;
     scanf("%d %d",&t1,&t2);
