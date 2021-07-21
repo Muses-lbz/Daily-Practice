@@ -1,5 +1,5 @@
-﻿//#include<stdio.h>
-//#include<stdlib.h>
+//#include <stdio.h>
+//#include <stdlib.h>
 //
 //int main()
 //{
@@ -9,7 +9,7 @@
 //	return 0;
 //}
 
-//#include<stdio.h>
+//#include <stdio.h>
 //
 //int main()
 //{
@@ -19,7 +19,7 @@
 //	return 0;
 //}
 
-//#include<stdio.h>
+//#include <stdio.h>
 //
 //int main()
 //{
@@ -32,7 +32,7 @@
 //	return 0;
 //}
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
