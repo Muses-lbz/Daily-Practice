@@ -1,4 +1,4 @@
-﻿//#define _CRT_SECURE_NO_WARNINGS
+//#define _CRT_SECURE_NO_WARNINGS
 //#include<stdio.h>
 //#include<stdlib.h>
 //
@@ -11,9 +11,8 @@
 //	return 0;
 //}
 
-#define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 #define M(x,y,z) x*y+z
 
 int main()
