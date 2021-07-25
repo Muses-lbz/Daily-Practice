@@ -1,4 +1,4 @@
-﻿//#include <stdio.h>
+//#include <stdio.h>
 //
 //int n, d[100];
 //bool v[100];
