@@ -3,7 +3,7 @@
 
 int main()
 {
-	printf("My dad is my hero.\n我的父亲是我的英雄.\n");
+	printf("We should never be ashamed of what we've gone through.\n往事莫悔。\n");
 	printf("\n");
 	system("pause");
 	return 0;
