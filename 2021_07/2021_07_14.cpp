@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	printf("HeHe!\n");
+	system("pause");
+	return 0;
+}
