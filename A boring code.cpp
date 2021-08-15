@@ -1,9 +1,9 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-	printf("We should never be ashamed of what we've gone through.\n往事莫悔。\n");
+	printf("Everything we do with our abilities is our responsibility.\n力之所为，一切皆责。\n");
 	printf("\n");
 	system("pause");
 	return 0;
