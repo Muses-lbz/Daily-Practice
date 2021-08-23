@@ -22,3 +22,5 @@ int main()
 	system("pause");
 	return 0;
 }
+
+PS:我本将心向明月，奈何明月照沟渠。
