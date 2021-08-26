@@ -3,7 +3,7 @@
 
 int main()
 {
-	printf("水滴石穿，绳锯木断\n\n");
+	printf("Honesty is your best defense and offense.\n以诚为本，进退无忧。\n\n");
 	system("pause");
 	return 0;
 }
