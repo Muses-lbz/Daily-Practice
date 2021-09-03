@@ -23,3 +23,5 @@ int main()
 	system("pause");
 	return 0;
 }
+
+PS:倾听，慎言，勇行。
