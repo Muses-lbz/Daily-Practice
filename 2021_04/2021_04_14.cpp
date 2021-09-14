@@ -3,24 +3,12 @@
 
 int main()
 {
-	int x, y, z;
-	scanf_s("%d %d %d", &x, &y, &z);
-	if (x > y)
-	{
-		if (x > z)
-			printf("%d", x);
-		else
-			printf("%d", z);
-	}
-	else
-	{
-		if (y > z)
-			printf("%d", y);
-		else
-			printf("%d", z);
-	}
-	printf("\n");
+	int a, b, c, t;
+	scanf_s("%d %d %d", &a, &b, &c);
+	if (a < b) { t = a; a = b; b = t; }
+	if (a < c) { t = a; a = c; c = t; }
+	if (b < c) { t = b; b = c; c = t; }
+	printf("%d %d %d\n", a, b, c);
 	system("pause");
 	return 0;
 }
-
