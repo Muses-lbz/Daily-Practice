@@ -1,33 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int X()
-{
-	printf("蔺");
-	return 0;
-}
-
-int Y()
-{
-	printf("兵");
-	return 0;
-}
-
-int Z()
-{
-	printf("姿");
-	return 0;
-}
-
 int main()
 {
-	X();
-	Y();
-	Z();
-	printf("\n");
-	Y();
-	Z();
-	printf("\n");
+	int a, count;
+	count = 0;
+	a = 5;
+	if (a % 2 == 0)
+		count++; if (a % 3 == 0)
+		count++; if (a % 4 == 0)
+		count++;
+	if (count == 0)
+		printf("质数\n");
+	else
+		printf("合数\n");
 	system("pause");
 	return 0;
 }
