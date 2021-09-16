@@ -1,33 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int X()
-{
-	printf("蔺");
-	return 0;
-}
-
-int Y()
-{
-	printf("兵");
-	return 0;
-}
-
-int Z()
-{
-	printf("姿");
-	return 0;
-}
-
 int main()
 {
-	X();
-	Y();
-	Z();
-	printf("\n");
-	Y();
-	Z();
-	printf("\n");
+	int i, j, k;
+	for (i = 1; i <= 9; i++)
+	{
+		for (j = 0; j <= 9; j++)
+		{
+			for (k = 0; k <= 9; k++)
+			{
+				if (i * 100 + j * 10 + k == i * i * i + j * j * j + k * k * k)
+				{
+					printf("%d ", i * 100 + j * 10 + k);
+				}
+			}
+		}
+	}
 	system("pause");
 	return 0;
 }
