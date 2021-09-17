@@ -3,7 +3,6 @@
 
 int main()
 {
-	scanf_s("%d", &y);
 	system("pause");
 	return 0;
 }
