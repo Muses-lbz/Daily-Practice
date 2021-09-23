@@ -10,6 +10,4 @@ int main()
 		printf("你是聪明的！\n");
 	else
 		printf("你是愚笨的！\n");
-	system("pause");
-	return 0;
 }
