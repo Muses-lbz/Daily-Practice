@@ -1,9 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main()
 {
-	printf("Everything we do with our abilities is our responsibility.\n力之所为，一切皆责。\n\n");
+	unsigned int un = 3000000000; /* int 为 32 位和 short 为 16 位的系统 */  
+	short  end = 200;  long  big = 65537;  long  long verybig = 12345678908642;
+	printf("un = %u and not %d\n", un,un);        
+	printf("end = %hd and %d\n", end,end);       
+	printf("big = %ld and not %hd\n", big,big);         
+	printf("verybig = %I64d and not %lld\n",verybig,verybig);
+	printf("\n");
 	system("pause");
 	return 0;
 }
