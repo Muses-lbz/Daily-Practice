@@ -12,11 +12,7 @@ int main()
 	{
 		char str[50] = {"不要和愚蠢的人发生争执！" };
 	}
-	else
-	{
-		char str[50] = {};
-	}
-	printf("seed=%d\n", seed);
+	el
 	if (str == "不要和愚蠢的人发生争执！")
 	{
 		printf("你是聪明的！\n\n");
