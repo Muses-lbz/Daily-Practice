@@ -1,120 +1,40 @@
-﻿//#include <stdio.h>
-//#include <stdlib.h>
-//#include <time.h>
-//
-//int main()
-//{
-//	int a, b, sum = 6;
-//	srand((unsigned)time(NULL));
-//	a = rand() % 100;
-//	while (1)
-//	{
-//		sum--;
-//		scanf_s("%d", &b);
-//		if (b > a)
-//			printf("大了，请继续\n");
-//		if (b < a)
-//			printf("小了，请继续\n");
-//		if (b == a)
-//		{
-//			printf("恭喜你答对了\n");
-//			break;
-//		}
-//		if (sum == 0)
-//		{
-//			printf("LOSE!");
-//			break;
-//		}
-//	}
-//	system("pause");
-//	return 0;
-//}
-
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <time.h>
-//
-//void main() 
-//{
-//	srand((unsigned)time(NULL));
-//	printf("%d", rand() % 20000000);
-//	printf("\n");
-//
-//}
-
-//#include <stdio.h>
-//#include <stdlib.h>
-//
-//int main()
-//{
-//	int a[5], i;
-//	for (i = 0; i <= 4; i++)
-//	{
-//		scanf_s("%d", &a[i]);
-//	}
-//	for (i = 4; i >= 0; i--)
-//	{
-//		printf("%d ", a[i]);
-//	}
-//	system("pause");
-//	return 0;
-//}
-
-//#include <stdio.h>
-//#include <stdlib.h>
-//
-//int main()
-//{
-//	int h, a[10], i, sum; for (i = 0; i <= 9; i++)
-//		scanf_s("%d", &a[i]);
-//	scanf_s("%d", &h); sum = 0;
-//	for (i = 0; i <= 9; i++)
-//	{
-//		if (a[i] <= h + 30)
-//			sum++;
-//	}
-//	printf("%d\n", sum);
-//	system("pause");
-//	return 0;
-//}
-
-//#include <stdio.h>
-//#include <stdlib.h>
-//
-//int main()
-//{
-//
-//	int a[10], i, t; 
-//	for (i = 0; i <= 9; i++)
-//		a[i] = 0; //初始化每个小房间为0
-//	for (i = 1; i <= 5; i++)
-//	{
-//		scanf_s("%d", &t); //依次读入5个数
-//		a[t]=1;         //把对应的小房间改为1
-//	}
-//	for (i = 0; i <= 9; i++)
-//		if (a[i] == 0)     //输出没有出现过的数
-//			printf("%d ", i);
-//	system("pause");
-//	return 0;
-//}
-
 #include <stdio.h>
 #include <stdlib.h>
+//用有序表表示静态查找表时，通常检索函数可以用折半查找来实现。
+//折半查找的查找过程是：首先确定待查记录所在的范围，然后逐步缩小范围直到找到或者确定找不到相应的记录为止。
+//而每次需要缩小的范围均为上一次的一半，这样的查找过程可以被称为折半查找。
+//第二行包含n个用空格隔开的正整数，表示n个有序的整数。输入保证这n个整数是从小到大递增的。
+//第三行包含k个用空格隔开的正整数，表示k次查询的目标。
+//输出：
+//只有1行，包含k个整数，分别表示每一次的查询结果。如果在查询中找到了对应的整数，则输出其相应的位置，否则输出 - 1。
+//请在每个整数后输出一个空格，并请注意行尾输出换行。
+int binary(int* a, int key, int n)
+{
+    int left = 0, right = n - 1, mid = 0;
+    mid = (left + right) / 2;
+    while (left < right && a[mid] != key)
+    {
+        if (a[mid] < key)
+            left = mid + 1;
+        else if (a[mid] > key)
+            right = mid - 1;
+        mid = (left + right) / 2;
+    }
+    if (a[mid] == key)   return mid;
+    return -1;
+}
 
 int main()
 {
-	int a[10], i, j, t; 
-	for (i = 0; i <= 9; i++)
-		a[i] = 0; // 初始化为0
-	for (i = 1; i <= 5; i++)  // 循环读入5个数
+	int Base_a[20] = { 1,3,5,8,9,40,120,123,125,150,199,200,1250,1255,1900,2000,2001,3000,3950,5000 };
+	int Search_a[5] = { 12,199,9,2001,3500 };
+	int result = 0x00;
+	for (int i = 0; i < sizeof(Search_a) / sizeof(Search_a[0]); i++)
 	{
-		scanf_s("%d", &t); // 把每一个数读到变量t中
-		a[t]++;          // t所对应小房子中的值增加1
+		result = binary(Base_a, Search_a[i], sizeof(Base_a) / sizeof(Base_a[0]));
+		printf("[%d %d] ", Search_a[i], result);
 	}
-	for (i = 0; i <= 9; i++)    // 依次判断0～9这个10个小房子
-		for (j = 1; j <= a[i]; j++)   //出现了几次就打印几次
-			printf("%d ", i);
+	printf("\n");
 	system("pause");
 	return 0;
 }
