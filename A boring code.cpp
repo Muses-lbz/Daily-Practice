@@ -6,7 +6,7 @@
 int main()
 {
 	char str[50];
-	srand((unsigned int)time(NULL));
+
 	if (seed == 0)
 	{
 		char str[50] = {"不要和愚蠢的人发生争执！" };
