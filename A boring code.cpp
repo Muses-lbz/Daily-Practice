@@ -6,12 +6,12 @@
 int main()
 {
 	char str[50];
-
+	srand((unsigned int)time(NULL));
+	int seed = rand() % 2;
 	if (seed == 0)
 	{
-		char str[50] = {"不要和愚蠢的人发生争执！" };
+		char str[50] = { "不要和愚蠢的人发生争执！" };
 	}
-	el
 	if (str == "不要和愚蠢的人发生争执！")
 	{
 		printf("你是聪明的！\n\n");
