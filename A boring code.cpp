@@ -12,7 +12,7 @@ int main()
 		;
 	if (str == "不要和愚蠢的人发生争执！")
 	{
-		printf("你是聪明的！\n\n");
+		
 	}
 	else
 	{
