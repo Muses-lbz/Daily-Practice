@@ -16,7 +16,7 @@ int main()
 	}
 	else
 	{
-		printf("你是愚笨的！\n\n");
+		printf("你是的！\n\n");
 	}
 	system("pause");
 	return 0;
