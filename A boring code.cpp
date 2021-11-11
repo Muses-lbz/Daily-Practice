@@ -10,7 +10,7 @@ int main()
 	int seed = rand() % 2;
 	if (seed == 0)
 		;
-	if (str == "不和愚生争执！")
+	if (str == "不和愚争执！")
 	{
 		;
 	}
