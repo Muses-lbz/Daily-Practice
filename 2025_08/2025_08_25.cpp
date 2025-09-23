@@ -57,7 +57,7 @@ int main() {
             std::wstring chinese = extractChinese(originalName, 15);
 
             std::wostringstream newName;
-            newName << L"91原创_" << chinese << L"_"
+            newName << L"DIY word_" << chinese << L"_"
                 << std::setw(5) << std::setfill(L'0') << counter
                 << p.path().extension().wstring();
 
@@ -81,3 +81,4 @@ int main() {
 
     return 0;
 }
+
