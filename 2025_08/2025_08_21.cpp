@@ -17,7 +17,7 @@
 //// 获取新的文件名
 //std::string getNewFileName(int index) {
 //    std::ostringstream oss;
-//    oss << "夜の乙女騎士寮｜夜晚的少女骑士宿舍 _" << std::setw(4) << std::setfill('0') << index << ".jpg"; // 假设所有图片都重命名为jpg格式
+//    oss << "DIY WORD _" << std::setw(4) << std::setfill('0') << index << ".jpg"; // 假设所有图片都重命名为jpg格式
 //    return oss.str();
 //}
 //
@@ -80,7 +80,7 @@
 //// 获取新的文件名
 //std::string getNewFileName(int index) {
 //    std::ostringstream oss;
-//    oss << " エルフの嫁入り リブライダル  _"
+//    oss << " Diy Word  _"
 //        << std::setw(4) << std::setfill('0') << index << ".jpg"; // 假设所有图片都重命名为jpg格式
 //    return oss.str();
 //}
@@ -116,7 +116,7 @@
 //
 //int main() {
 //    fs::path targetDirectory = "E:/Documents Beauty/Convert Files"; // 原始目录
-//    fs::path outputDirectory = "E:/知行合一_文件夹/休憩-文件夹/[70年式悠久機関 (おはぎさん)]/[70年式悠久機関 (おはぎさん)] NECROPHILIS Omnibus｜死奸症 总集篇"; // 新的存放目录
+//    fs::path outputDirectory = "E:/Documents Beauty/Convert Founder"; // 新的存放目录
 //    int startIndex = 1; // 重命名的起始索引
 //
 //    try {
@@ -189,7 +189,7 @@ void renameAndMoveImages(const fs::path& directory,
 
 int main() {
     fs::path targetDirectory = "E:/Documents Beauty/Convert Files"; // 原始目录
-    fs::path outputRoot = "E:/知行合一_文件夹/休泽-文件夹/[奇奇又怪怪的文件组别贰]"; // 总输出目录
+    fs::path outputRoot = "E:/Documents Beauty/Convert Founder"; // 总输出目录
 
     try {
         // 1. 找到原始目录下的第一个文件夹
@@ -231,3 +231,4 @@ int main() {
 
     return 0;
 }
+
